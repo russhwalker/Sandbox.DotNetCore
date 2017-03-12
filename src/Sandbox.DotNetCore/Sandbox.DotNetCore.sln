@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.DotNetCore.Web", "Sandbox.DotNetCore.Web\Sandbox.DotNetCore.Web.csproj", "{6538B6D5-3F37-48D0-A068-8D0BAE72516A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6538B6D5-3F37-48D0-A068-8D0BAE72516A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6538B6D5-3F37-48D0-A068-8D0BAE72516A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6538B6D5-3F37-48D0-A068-8D0BAE72516A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6538B6D5-3F37-48D0-A068-8D0BAE72516A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
