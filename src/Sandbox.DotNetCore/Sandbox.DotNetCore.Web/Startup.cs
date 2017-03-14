@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Sandbox.DotNetCore.Core.Repository;
+using Sandbox.DotNetCore.Data.Repository;
+using Sandbox.DotNetCore.Core.Service;
+using Sandbox.DotNetCore.Business.Service;
 
 namespace Sandbox.DotNetCore.Web
 {
@@ -27,7 +31,10 @@ namespace Sandbox.DotNetCore.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.
+
+            services.AddTransient<ICustomerRepository, CustomerRepository>();
+            services.AddTransient<ICustomerService, CustomerService>();
+
             services.AddMvc();
         }
 

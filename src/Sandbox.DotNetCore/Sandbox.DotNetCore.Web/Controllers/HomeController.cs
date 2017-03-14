@@ -3,11 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Sandbox.DotNetCore.Core.Service;
 
 namespace Sandbox.DotNetCore.Web.Controllers
 {
     public class HomeController : Controller
     {
+
+        private readonly ICustomerService customerService;
+
+        public HomeController(ICustomerService customerService)
+        {
+            this.customerService = customerService;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -20,12 +29,6 @@ namespace Sandbox.DotNetCore.Web.Controllers
             return View();
         }
 
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
-        }
 
         public IActionResult Error()
         {

@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sandbox.DotNetCore.Core\Sandbox.DotNetCore.Core.csproj" />
+    <ProjectReference Include="..\Sandbox.DotNetCore.Data\Sandbox.DotNetCore.Data.csproj" />
+  </ItemGroup>
+
+</Project>
