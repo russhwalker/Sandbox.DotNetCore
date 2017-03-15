@@ -7,6 +7,7 @@ namespace Sandbox.DotNetCore.Core.Service
 {
     public interface ICustomerService
     {
+        Customer GetCustomer(int customerId);
         List<Customer> GetCustomers();
     }
 }

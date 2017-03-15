@@ -7,6 +7,7 @@ namespace Sandbox.DotNetCore.Core.Repository
 {
     public interface ICustomerRepository
     {
+        Customer GetCustomer(int customerId);
         List<Customer> GetCustomers();
     }
 }

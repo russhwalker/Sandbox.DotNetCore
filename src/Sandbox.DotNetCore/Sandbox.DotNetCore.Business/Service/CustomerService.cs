@@ -21,5 +21,10 @@ namespace Sandbox.DotNetCore.Business.Service
             return this.customerRepository.GetCustomers();
         }
 
+        public Customer GetCustomer(int customerId)
+        {
+            return this.customerRepository.GetCustomer(customerId);
+        }
+
     }
 }

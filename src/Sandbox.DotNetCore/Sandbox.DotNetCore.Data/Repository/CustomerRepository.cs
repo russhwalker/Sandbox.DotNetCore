@@ -7,9 +7,16 @@ namespace Sandbox.DotNetCore.Data.Repository
 {
     public class CustomerRepository : ICustomerRepository
     {
+
+        public Customer GetCustomer(int customerId)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Customer> GetCustomers()
         {
             throw new NotImplementedException();
         }
+
     }
 }

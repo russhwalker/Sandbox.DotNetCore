@@ -19,16 +19,9 @@ namespace Sandbox.DotNetCore.Web.Controllers
 
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
 
             return View();
-        }
-
+        } 
 
         public IActionResult Error()
         {

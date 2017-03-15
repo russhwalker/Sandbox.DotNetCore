@@ -59,6 +59,9 @@ namespace Sandbox.DotNetCore.Web
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                    name: "customer",
+                    template: "{controller=Customer}/{action=Edit}/{customerId}");
+                routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
