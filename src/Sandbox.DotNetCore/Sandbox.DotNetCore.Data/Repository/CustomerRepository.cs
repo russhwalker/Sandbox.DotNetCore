@@ -10,12 +10,32 @@ namespace Sandbox.DotNetCore.Data.Repository
 
         public Customer GetCustomer(int customerId)
         {
-            throw new NotImplementedException();
+            return new Customer
+            {
+                CustomerId = customerId,
+                FirstName = "John",
+                LastName = "Doe"
+            };
         }
 
         public List<Customer> GetCustomers()
         {
-            throw new NotImplementedException();
+            //mock data for now
+            return new List<Customer>
+            {
+                new Customer
+                {
+                    CustomerId = 1,
+                    FirstName="John",
+                    LastName ="Doe"
+                },
+                new Customer
+                {
+                    CustomerId = 2,
+                    FirstName="Jane",
+                    LastName ="Smith"
+                }
+            };
         }
 
     }

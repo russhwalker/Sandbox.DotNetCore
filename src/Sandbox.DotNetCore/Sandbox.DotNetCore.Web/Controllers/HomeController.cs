@@ -9,12 +9,10 @@ namespace Sandbox.DotNetCore.Web.Controllers
 {
     public class HomeController : Controller
     {
+        
 
-        private readonly ICustomerService customerService;
-
-        public HomeController(ICustomerService customerService)
+        public HomeController()
         {
-            this.customerService = customerService;
         }
 
         public IActionResult Index()
