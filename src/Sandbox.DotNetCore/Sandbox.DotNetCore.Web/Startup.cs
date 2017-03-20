@@ -32,6 +32,8 @@ namespace Sandbox.DotNetCore.Web
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IProductService, ProductService>();
             services.AddTransient<ICustomerRepository, CustomerRepository>();
             services.AddTransient<ICustomerService, CustomerService>();
 

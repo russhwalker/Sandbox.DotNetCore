@@ -1,13 +1,12 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Sandbox.DotNetCore.Web.ViewModels
 {
-    public class CustomersViewModel
+    public class TopProductsViewModel
     {
-        public List<Core.Models.Customer> Customers { get; set; }
+        public List<Core.Models.Product> Products { get; set; }
     }
 }

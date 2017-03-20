@@ -2,4 +2,7 @@
 <div class="row">
     <h1>Index</h1>
     <a asp-controller="Customer" asp-action="Index">Customers</a>
+    <br />
+    @*<vc:top-products></vc:top-products>*@
+    @await Component.InvokeAsync("TopProducts")
 </div>
